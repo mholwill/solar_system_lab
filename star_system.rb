@@ -30,7 +30,7 @@ class StarSystem
 
   def get_planets_with_more_moons(number)
     expected_names = @planets.find_all {|planet| planet.number_of_moons > number}
-    expected_names.map {|names| names.name}
+    expected_names.map {|planet| planet.name}
   end
 
   def get_number_of_planets_closer_than(number)
