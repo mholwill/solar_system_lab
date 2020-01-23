@@ -50,7 +50,7 @@ class StarSystem
   end
 
   def get_planet_names_sorted_by_size_decreasing
-    planets_by_size = @planets.sort_by{ |planet| planet.diameter }.reverse!
+    planets_by_size = @planets.sort_by{ |planet| planet.diameter }.reverse
     return planets_by_size.map { |planet| planet.name }
   end
 
